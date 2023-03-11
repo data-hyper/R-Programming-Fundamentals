@@ -1,4 +1,4 @@
-#Chapter 1: Getting started, installing packages and bringing them to the session
+#Chapter 1: Getting started, installing packages and bringing them to the current R session
 getwd()
 install.packages(c("tidyverse", 
                    "dplyr", 
@@ -27,9 +27,8 @@ subj <- c("subj1", "subj2", "subj3", "subj4", "subj5")
 typeof(subj)
 class(subj)
 
-# (2) Create a numeric vector called "age" that includes the hypothetical ages
-# of those subjects, ranging from 18 to 60 years old. Let 1 of the 5 values be
-# missing.
+# (2) Create a numeric vector called "age" that includes the hypothetical ages of those subjects, ranging from 18 to 60 years old. 
+# Let 1 of the 5 values be missing.
 
 age <- c(20, 30, 40, 50, NA)
 typeof(age)
@@ -50,8 +49,8 @@ sd(age, na.rm = TRUE)
 age > 30
 age[age > 30]
 
-# (5) Subset the "subj" vector to return the names of those with ages greater
-# than 30 years old
+# (5) Subset the "subj" vector to return the names of those with ages greater than 30 years old 
+
 subj[age > 30]
 
 # (6) Concatenate a string that states the names and ages of the SUBJ and AGE 
@@ -65,13 +64,14 @@ args(paste)
 
 paste("The class of the SUBJ_AGE vector is","'",class(SUBJ_AGE),"'")
 
+# (8) Concatenate the following string together to form a # sentence: 
 
-# (8) Concatenate the following string and R objects together to form a cohesive
-# sentence: "An important subset of my study has L subjects, with a mean age of
-# G years old. Their names and ages are: SUBJ_AGE." Where L is the number of
-# elements in vector SUBJ, G is the mean age rounded to 2 decimal points, and
-# the list of names and ages utilizes the "collapse" argument from the paste
-# function to separate each name/ age combo with a comma.
+#"An important subset of my study has L subjects, 
+# with a mean age of G years old. 
+# Their names and ages are: SUBJ_AGE." 
+
+# L is the number of elements in vector SUBJ, 
+# G is the mean age rounded to 2 decimal points, and
 
 L <- length(subj)
 G <- round(mean(age, na.rm = T),2)
