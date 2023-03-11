@@ -1,2 +1,2 @@
 # R-Programming-Fundamentals
-This repo will have R scripts to demo various R tricks to wrangle or visualize any data
+This repo will have R scripts to demo various R programming tricks using R-Studio (Posit) to wrangle and visualize your data
